@@ -29,13 +29,13 @@ function Header() {
               <NavLink>Home</NavLink>
             </li>
             <li>
-              <NavLink>Story</NavLink>
+              <NavLink>Event</NavLink>
             </li>
             <li>
-              <NavLink>Wallpapers</NavLink>
+              <NavLink>About us</NavLink>
             </li>
             <li>
-              <NavLink className="force-red">#BeYourself</NavLink>
+              <NavLink className="force-red">GDG RBU</NavLink>
             </li>
           </NavList>
         </NavMenu>

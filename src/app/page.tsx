@@ -2,10 +2,24 @@
 
 import styled, { keyframes } from "styled-components";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import BackgroundLines from "./components/BackgroundLines";
 import BackgroundVideo from "./components/BackgroundVideo";
 import Header from "./components/Header";
 import Loading from "./components/Loading";
+import SpidermanHero from "@/assets/spider-man.png";
+import Spidercraft from "@/assets/spidercraft.png"
+import {
+  Container,
+  WrapperContent,
+  WrapperImage,
+  Logo,
+  Description,
+  WrapperButtons,
+  PreOrderButton,
+  WatchTeaserButton,
+  Spiderman,
+} from "./styles/styles";
 
 const fadeOut = keyframes`
   from {
@@ -82,6 +96,30 @@ export default function Home() {
         <Header />
         <BackgroundVideo />
         <BackgroundLines />
+        <Container>
+          <WrapperContent>
+            <Logo className="item-1">
+              <Image src={Spidercraft} alt="Spider-Man Miles Morales" />
+            </Logo>
+
+            <Description className="item-2">
+              Gear up for POLARIS, the ultimate tech showdown by GDG! Code,
+              quiz, and play your way through thrilling challenges. Test your
+              skills, compete for amazing prizes, and have a blast with fellow
+              tech lovers. Ready to shine? Join the adventure! 
+            </Description>
+
+            <WrapperButtons className="item-3">
+              <PreOrderButton>Start</PreOrderButton>
+
+              <WatchTeaserButton>Leaderboard</WatchTeaserButton>
+            </WrapperButtons>
+          </WrapperContent>
+
+          <WrapperImage className="item-5">
+            <Spiderman src={SpidermanHero.src} alt="Spider-Man Miles Morales" />
+          </WrapperImage>
+        </Container>
       </MainContentContainer>
     </>
   );
