@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Section = styled.section`
   position: absolute;
@@ -15,7 +15,7 @@ export const Section = styled.section`
   align-items: center;
 
   &::after {
-    content: '';
+    content: "";
 
     width: 100%;
     height: 100%;
